@@ -5,21 +5,21 @@
 class Fireauth < Formula
   desc "CLI tool for authenticating against Firebase and managing bearer tokens for REST API testing."
   homepage "https://github.com/andrespd99/fireauth"
-  version "1.0.0-beta.2"
+  version "1.0.0-beta.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/andrespd99/fireauth/releases/download/v1.0.0-beta.2/fireauth_darwin_amd64.tar.gz"
-      sha256 "f21f8c88228072919fa8f7e4111de30ad9765d51b31d09f4c55643e9998e453d"
+      url "https://github.com/andrespd99/fireauth/releases/download/v1.0.0-beta.3/fireauth_darwin_amd64.tar.gz"
+      sha256 "f0da6163c0b1b2c34e40dd32b8fd47ff289705d231e0d59ac80b9c892c880575"
 
       define_method(:install) do
         bin.install "fireauth"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/andrespd99/fireauth/releases/download/v1.0.0-beta.2/fireauth_darwin_arm64.tar.gz"
-      sha256 "03908fd217afa22b40a37a2070b17a04e00da6455d477d66628d8a9047f90e76"
+      url "https://github.com/andrespd99/fireauth/releases/download/v1.0.0-beta.3/fireauth_darwin_arm64.tar.gz"
+      sha256 "8f92a4fc9269841242af0574fa06b9a4d72470903f900a06c660e3045c0030a2"
 
       define_method(:install) do
         bin.install "fireauth"
@@ -29,15 +29,15 @@ class Fireauth < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/andrespd99/fireauth/releases/download/v1.0.0-beta.2/fireauth_linux_amd64.tar.gz"
-      sha256 "be3c2ba29f3ae919780f164c89d1369cde91c2c1957d4b67e9c36351084f6dc8"
+      url "https://github.com/andrespd99/fireauth/releases/download/v1.0.0-beta.3/fireauth_linux_amd64.tar.gz"
+      sha256 "ce358117a715c7788a568199ded8a6dbc8bed48ac102b7baabce4707fb6d2017"
       define_method(:install) do
         bin.install "fireauth"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/andrespd99/fireauth/releases/download/v1.0.0-beta.2/fireauth_linux_arm64.tar.gz"
-      sha256 "f1058ca79b9a08de1c2408555fc0a6a5e38ff59acb95e7faa88635461bfd92f5"
+      url "https://github.com/andrespd99/fireauth/releases/download/v1.0.0-beta.3/fireauth_linux_arm64.tar.gz"
+      sha256 "9f5fee2386a91e32a9a13362c9d9bdc57947e8b57299905441a54dcd22d5c4dc"
       define_method(:install) do
         bin.install "fireauth"
       end
